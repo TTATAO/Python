@@ -17,40 +17,6 @@ from django.core.serializers import serialize
 SECRECT_KEY = 'com.jobapp'
 def index(request):
     return HttpResponse('index')
-# def login(request):
-#    if request.method=='POST':
-#        # print(request.method)
-#        #  print(request.POST)
-#        # print(request.GET['id'])
-#        # print(request.GET['password'])
-#        # print(request.POST['id'])
-#        # print(json.loads(request.body))
-#        # return HttpResponse("我是POST")
-#
-#         # res=json.loads(request.body)["tel"]
-#         # print(res)
-#         # return HttpResponse("66666")
-#        #
-#          user=models.Userlala.objects.filter(date='09-29').first()
-#          print(user.title)
-#          return  HttpResponse(user.title)
-#
-#
-#
-#        #  result={
-#        #      'xuan':'aichiji',
-#        #  }
-#        #  resp=HttpResponse(json.dumps(result),status=200,charset='utf-8',content_type='application/json')
-#        #  resp['token']='1438'
-#        #  resp['Access-Control-Expose-Headers'] = 'token'
-#        #  print(request.META.get('HTTP_TOKEN'))
-#        #  return resp
-#    # else:
-#    #       # print(request.GET['id'])
-#    #       res=HttpResponse("我是GET")
-#    #
-#    #       return res
-
 # 登陆并且签发token
 def login(request):
 
